@@ -96,7 +96,7 @@ segments(x0 = mult_seg$x0,                            # Draw multiple lines
          y1 = mult_seg$y1)
 
 #Actual data: of May 1st - may 13th
-actual <- c(max(cases)+29917,max(cases)+33955+29917, max(cases)+33955+29917+29288)
+
 
 
 actual.cases <- c(29917,33955,29288,24972,22593,23841,24128,
