@@ -1,5 +1,11 @@
-setwd("../Documents/Spring 2020/Honor Math/COVID 19")
+setwd("../Documents/Spring 2020/Honor Math")
 covid.data <-read.csv ("./USA_Deaths_and_Confirmed_Cases.csv",header=TRUE)
+installed.packages("lmtest")
+library(data.table)
+library(lmtest)
+install.packages("formattable")
+library(formattable)
+
 new.covid <- subset(covid.data, Time >=3.5 ,
                     select=Total.Deaths:Time) 
 dths = new.covid$Total.Deaths
@@ -96,7 +102,7 @@ segments(x0 = mult_seg$x0,                            # Draw multiple lines
          y1 = mult_seg$y1)
 
 #Actual data: of May 1st - may 13th
-
+actual <- c(max(cases)+29917,max(cases)+33955+29917, max(cases)+33955+29917+29288)
 
 
 actual.cases <- c(29917,33955,29288,24972,22593,23841,24128,
@@ -108,6 +114,7 @@ for ( i in 2:length(actual.cases)){
 }
 time_actual <- c()
 for (i in 1:7){ time_actual <- append(time_actual, 5+(i-1)/30)}
+#Plot prediction + actual confirmed case value
 plot(time,cases,main="Zoom-In Time Series and Fitted Plot",xlim=c(3.0,max(time_new)+0.5),
       ylim=c(600000,max(cases)+500000),ylab="Total cases",pch=19)
 curve(b0+b1*x, col="red",add=TRUE)
@@ -123,3 +130,11 @@ legend("topleft",legend="Predicted I", lty=1 )
 actual.may6.14 <- actual.cases[6:14]
 pred.may6.14 <- cases1.pred_a[6:14]
 forecast.prec <- abs(actual.may6.14-pred.may6.14)*100/actual.may6.14
+forecast.table <- data.table(x=(actual.may6.14),y=pred.may6.14, z=forecast.prec)
+colnames(forecast.table) <- c('real.time.confirmed.cases', 'predict.confirmed.cases', 'percentage.difference')
+forecast.table
+formattable(forecast.table, 
+            align =c("c","c","c"), 
+            list(`Indicator Name` = formatter(
+              "span", style = ~ style(color = "grey",font.weight = "bold")) 
+            ))
