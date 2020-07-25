@@ -52,7 +52,7 @@ I use both Python - Jupyter and R for my analysis. I use Python for the preproce
 2) Build a NonLinear Regression Model: Exponential model
 3) Error analysis (to check for autocorrelation)
 - Graphing errors against time and against itself. If there is autocorrelation in the error, the 
-4) Apply Remedial for autocorrelation
+4) Build a linear regression model that considers correlated error terms
 - Check if the model have autocorrelation using hypothesis testing (Durbin Watson Test) 
 - If it doesn't have any autocorrelation, then applying forecasting
 5) Forecasting and time series
