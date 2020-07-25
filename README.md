@@ -13,6 +13,7 @@ For this project, I want to demonstrate the reliability of forecasting and time 
 I am focusing on analysing the Confirmed Cases vs Time. Typically, one can just simply use a normal nonlinear regression model (NLRM) or linear regression model (LRM) to predict the future. However, there exists correlated error terms in the model, in which the error terms value depends on its past self 
 
 ![image](https://user-images.githubusercontent.com/60806068/88416221-d6807300-cdad-11ea-8400-44cea8604ab9.png)
+
 Image 1: This image shows that there is a correlation between the error at timestamp t and its previous timestamp 
 
 - Why is there correlated error term in the mmodel? 
@@ -23,6 +24,7 @@ Therefore, considering autocorrelation in our analysis increases accuracy and pr
 ## III. Results:
 
 ![image](https://user-images.githubusercontent.com/60806068/88429478-bad49700-cdc4-11ea-9d65-12c41dfe763c.png)
+
 Image 2: Honor Thesis Poster: A quick summary of my research
 
 Taking a closer look at the forecasting result: 
