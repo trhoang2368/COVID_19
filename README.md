@@ -38,15 +38,20 @@ Taking a closer look at the forecasting result:
 ## III. Analysis Steps: 
 I use both Python - Jupyter and R for my analysis. I use Python for the preprocessing and R for the forecasting and correcting autocorrelation. For the forecasting, I want to determine the precision and the accuracy of my forecasting model (Time Vs Confirmed Cases)
 
-
-### R Code:
 I choose to analyse only time and confirmed case My analysis step:
 
-1. Build a NonLinear Regression Model
-   I choose Exponential model
-2. Error analysis (to check for autocorrelation)
-3. Apply Remedial for autocorrelation
-4. Forecasting and time series
+1) Data Exploratory with Python: .
+   - Exploring the casses in the top COVID countries: USA, Spain, Italy 
+   - Filtering cases in the USA
+   - Calculating the total confirmed cases by day
+   - Creating a csv file that report the date with the correspond total confirmed cases
+2) Build a NonLinear Regression Model: Exponential model
+3) Error analysis (to check for autocorrelation)
+- Graphing errors against time and against itself. If there is autocorrelation in the error, the 
+4) Apply Remedial for autocorrelation
+- Check if the model have autocorrelation using hypothesis testing (Durbin Watson Test) 
+- If it doesn't have any autocorrelation, then applying forecasting
+5) Forecasting and time series
 
 
 After forecasting, I want to automate my process;
