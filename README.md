@@ -6,23 +6,26 @@
 - senior Presentation_pdf.pdf: My presentation for Honors Thesis
 
 ## I. Analysis Goal: 
-For this project, I want to learn the powerful forecasting and time series analysis in a short period using the concepts of autocorrelation. I pick COVID 19 data to build a forecasting model using R and Python. The result of my analysis 100% precision 5 days in the future and 95% precision 14 days in the future. 
+For this project, I want to demonstrate the powerful forecasting and time series analysis in a short period using the concepts of autocorrelation. I pick COVID 19 data to build a forecasting model using R and Python. The result of my analysis 100% precision 5 days in the future and 95% precision 14 days in the future. 
 
 ## II. The problem relating to the COVID 19 dataset 
-I am focusing on analysing the Confirmed Cases vs Time. Typically, one can just simply use the a normal nonlinear regression model (NLRM) or linear regression model (LRM) to predict the future. However, there exists a correlated error terms in the model, in which the error terms value depends on its past self 
+I am focusing on analysing the Confirmed Cases vs Time. Typically, one can just simply use a normal nonlinear regression model (NLRM) or linear regression model (LRM) to predict the future. However, there exists correlated error terms in the model, in which the error terms value depends on its past self 
 
 ![image](https://user-images.githubusercontent.com/60806068/88416221-d6807300-cdad-11ea-8400-44cea8604ab9.png)
+Image 1: This image shows that there is a correlation between the error at timestamp t and its previous timestamp 
 
-
-The correlated error terms coming from missing key variables that have ordered effects on the model. In our cases, maybe the Covid 19 model is missing some time-affect variables such as the trasmission rate, on average, how many people do one individual interact daily.
+- Why is there correlated error term in the mmodel? 
+<p>The correlated error terms coming from missing key variables that have ordered effects on the model. In this case, maybe the Covid 19 model is missing some time-affect variables such as the tranmission rate, on average, how many people does one interact with daily. </p> 
 ==> Considering autocorrelation in our analysis increases accuracy and precision in our analysis 
 
 ## III. Results:
 
 ![image](https://user-images.githubusercontent.com/60806068/88429478-bad49700-cdc4-11ea-9d65-12c41dfe763c.png)
+Image 2: Honor Thesis Poster: A quick summary of my research
 
 Taking a closer look at the forecasting result: 
 ![image](https://user-images.githubusercontent.com/60806068/88429429-a1cbe600-cdc4-11ea-855d-1b39bf660a14.png)
+
 - The line indicates the forecasting values
 - The black dots are the data that used to train the model 
 - The while dots are real-time confirmed cases (from May 1st - May 14th)
@@ -52,7 +55,6 @@ I choose to analyse only time and confirmed case My analysis step:
 - Check if the model have autocorrelation using hypothesis testing (Durbin Watson Test) 
 - If it doesn't have any autocorrelation, then applying forecasting
 5) Forecasting and time series
+- Build a model that test for autocorrelation and producing forecasting results
 
 
-After forecasting, I want to automate my process;
-This is the page in which I am trying to automate my analysis. (web scrabbing then automatically update the R file) 
