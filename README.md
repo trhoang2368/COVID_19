@@ -29,6 +29,7 @@ Image 2: Honor Thesis Poster: A quick summary of my research
 
 
 Taking a closer look at the forecasting result: 
+
 ![image](https://user-images.githubusercontent.com/60806068/88429429-a1cbe600-cdc4-11ea-855d-1b39bf660a14.png)
 
 - The line indicates the forecasting values
