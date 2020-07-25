@@ -1,6 +1,7 @@
 # Predicting COVID-19 Confirmed Cases in USA 
 ## File's Description: 
 - covid19.R: Create non-linear regression model and linear regression model for both death and confirmed cases. 
+- Covid19_data_exploratory.ipynb: data exploratory with confirmed cases and deaths in the USA, Italy and Spain
 - CasesVsTime_LRN.R: Time Series analysis on the confirmed cases using autocorrelation
 - Spring-Fest-Poster_Trang.pdf: My poster at Clark University's academic presentation day 
 - senior Presentation_pdf.pdf: My presentation for Honors Thesis
