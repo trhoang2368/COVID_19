@@ -17,7 +17,8 @@ Image 1: This image shows that there is a correlation between the error at times
 
 - Why is there correlated error term in the mmodel? 
 <p>The correlated error terms coming from missing key variables that have ordered effects on the model. In this case, maybe the Covid 19 model is missing some time-affect variables such as the tranmission rate, on average, how many people does one interact with daily. </p> 
-==> Considering autocorrelation in our analysis increases accuracy and precision in our analysis 
+
+Therefore, considering autocorrelation in our analysis increases accuracy and precision in our analysis 
 
 ## III. Results:
 
