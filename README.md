@@ -6,7 +6,7 @@
 - senior Presentation_pdf.pdf: My presentation for Honors Thesis
 
 ## I. Analysis Goal: 
-For this project, I want to demonstrate the powerful forecasting and time series analysis in a short period using the concepts of autocorrelation. I pick COVID 19 data to build a forecasting model using R and Python. The result of my analysis 100% precision 5 days in the future and 95% precision 14 days in the future. 
+For this project, I want to demonstrate the powerful forecasting and time series analysis in a short period using the concepts of autocorrelation. I pick COVID 19 data, confirmed cases, to build a forecasting model using R and Python. The result of my analysis 100% precision 5 days in the future and 95% precision 14 days in the future. 
 
 ## II. The problem relating to the COVID 19 dataset 
 I am focusing on analysing the Confirmed Cases vs Time. Typically, one can just simply use a normal nonlinear regression model (NLRM) or linear regression model (LRM) to predict the future. However, there exists correlated error terms in the model, in which the error terms value depends on its past self 
@@ -41,7 +41,6 @@ Taking a closer look at the forecasting result:
 ## III. Analysis Steps: 
 I use both Python - Jupyter and R for my analysis. I use Python for the preprocessing and R for the forecasting and correcting autocorrelation. For the forecasting, I want to determine the precision and the accuracy of my forecasting model (Time Vs Confirmed Cases)
 
-I choose to analyse only time and confirmed case My analysis step:
 
 1) Data Exploratory with Python: .
    - Exploring the casses in the top COVID countries: USA, Spain, Italy 
