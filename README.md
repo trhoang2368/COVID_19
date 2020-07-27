@@ -44,7 +44,7 @@ Taking a closer look at the forecasting result:
    
 ![image](https://user-images.githubusercontent.com/60806068/88429557-db9cec80-cdc4-11ea-9a42-c1c31b60844a.png)
 
-## III. Analysis Steps: 
+## IV. Analysis Steps: 
 I use both Python - Jupyter and R for my analysis. I use Python for the preprocessing and R for the forecasting and correcting autocorrelation. For the forecasting, I want to determine the precision and the accuracy of my forecasting model (Time Vs Confirmed Cases)
 
 
